@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Khelldon - Get Framed" />
+		<Description value="Removes glue from frames so you have to nail frames together for them to stick" />
+		<Author value="Doughphunghus,Khelldon" />
+		<Version value="19.2.1.0" />
+	</ModInfo>
+</xml>

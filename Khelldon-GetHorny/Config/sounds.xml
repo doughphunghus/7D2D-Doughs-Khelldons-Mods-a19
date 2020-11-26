@@ -1,0 +1,76 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+<append xpath="/Sounds">
+
+<!-- 
+Khelldon - Bicycle Bell 
+Credit for this sound goes to http://soundbible.com/292-Bicycle-Bell-Ringing.html
+-->
+<SoundDataNode name="khelldonBikeBell"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/khelldon-GetHornyAudio.unity3d?bicycleHorn"/>
+    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+
+<!-- 
+Khelldon - Minibike Horn 
+Credit for this sound goes to http://soundbible.com/59-Ahooga-Car-Horn.html
+-->
+<SoundDataNode name="khelldonMinibikeHorn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/khelldon-GetHornyAudio.unity3d?minibikeHorn"/>
+    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+
+<!--
+Khelldon - Motorcycle Horn 
+Credit for this sound goes to guitarguy1985 http://soundbible.com/1450-Air-Horn.html
+-->
+<SoundDataNode name="khelldonMotorcycleHorn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/khelldon-GetHornyAudio.unity3d?motorcycleHorn"/>
+    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+
+<!--
+Khelldon - Truck Horn 
+Credit for this sound goes to Daniel Simion http://soundbible.com/2192-Fire-Truck-Horn.html
+-->
+<SoundDataNode name="khelldonTruckHorn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/khelldon-GetHornyAudio.unity3d?truckHorn"/>
+    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+
+<!-- 
+Khelldon - Gyrocopter Horn 
+Credit for this sound goes to Daniel Simion http://soundbible.com/2179-Dixie-Horn.html
+-->
+<SoundDataNode name="khelldonGyrocopterHorn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/khelldon-GetHornyAudio.unity3d?gyrocopterHorn"/>
+    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
+
+</append>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</Khelldon>

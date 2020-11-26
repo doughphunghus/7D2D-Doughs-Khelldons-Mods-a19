@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Khelldon - Get Benched" />
+		<Description value="Makes the workbench required for crafting almost everything" />
+		<Author value="Doughphunghus,Khelldon" />
+		<Version value="19.2.1.0" />
+	</ModInfo>
+</xml>

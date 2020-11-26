@@ -1,0 +1,121 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+<!--
+Khelldon - Lets add the bent Nail code
+We'll extend from the standard nail
+-->
+<append xpath="/items">
+
+<item name="resourceNailBent">
+	<property name="Extends" value="resourceNail"/>
+	<property name="CustomIcon" value="resourceNailBentIcon"/>
+	<property name="DescriptionKey" value="resourceNailBentDesc"/>
+</item>
+
+</append>
+
+<!--
+Khelldon - Lets add the Box of Nails code
+We'll extend from the standard nail
+-->
+<append xpath="/items">
+
+<item name="khelldonBoxNails">
+	<property name="Extends" value="resourceNail"/>
+	<property name="CustomIcon" value="khelldonBoxNailsIcon"/>
+	<property name="DescriptionKey" value="khelldonBoxNailsDesc"/>
+</item>
+
+</append>
+
+<!--
+Khelldon - hammer tweaks
+This will only work with the vanilla unaltered hammer
+If you have altered the hammer this section may not work with your mod
+Idea by Stompy
+-->
+
+<!-- Set new tool harvest category -->
+<append xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/effect_group[@name='meleeToolRepairT1ClawHammer']">
+	<passive_effect name="HarvestCount" operation="base_set" value="1" tags="nailsHarvest"/>
+</append>
+
+<!--
+Khelldon - Add Crowbar to the world
+Crowbar free asset from Valve Source SDK and coverted to Unity for use with 7 days to Die by Khelldon
+Please credit Valve with this model.
+-->
+<append xpath="/items">
+
+<item name="khelldonCrowbar">
+	<property name="Extends" value="meleeToolSalvageT1Wrench"/>
+	<property name="CustomIcon" value="khelldonCrowbarIcon"/>
+	<property name="DescriptionKey" value="khelldonCrowbarDesc"/>
+	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations"/>
+	<property name="DisplayType" value="meleeRepairTool"/>
+	<property name="HoldType" value="29"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonCrowbar.unity3d?khelldonCrowbarPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="288"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+		<property name="ToolCategory.Disassemble" value="1" param1="1"/>
+		<property name="Sound_harvesting" value="wrench_harvest" param1="metal"/>
+		<property name="Particle_harvesting" value="true" param1="metal"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="1"/>
+		<property name="Repair_amount" value="350"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="12.5"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5.4"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest"/>
+	    <passive_effect name="HarvestCount" operation="base_set" value="1" tags="nailsHarvest"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="16.2" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,600" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+</append>
+
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</Khelldon>
