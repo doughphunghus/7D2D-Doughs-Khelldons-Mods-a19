@@ -1,7 +1,8 @@
 **For game**: [7 Days to Die](https://7daystodie.com)
 
 ### Originally: 7d2dModlets
-Originally Forked from Khelldons original 7d2dModlets for alpha17 "7 Days to Die" modlets to work with later game versions.
+Originally Forked from Khelldons [original 7d2dModlets for alpha17](https://github.com/Khelldon/7d2dModlets), tehn moved into this repo during a19
+
 Note: Should anyone, The Fun Pimps, etc wonder, Khelldon gave permission to use/update these as needed, per https://7daystodie.com personal communications. I plan on trying to keep these up to date and close to original purpose/functionality as much as I reasonably can.
 
 **To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
@@ -36,6 +37,3 @@ Note: Should anyone, The Fun Pimps, etc wonder, Khelldon gave permission to use/
 | Khelldon-GetFramed | a19.2 b4 | WORKS - Tested.  Modified from Original.  Can now build 1 frame horizontally out without nails instead of only upward. |
 | Khelldon-GetGreener | a19 b177 | WORKS - Tested |
 | zzz-Khelldon-GetBenched | a19 b177 | BROKEN/WIP - WIll likely decom as others have "pick up workbench" modlets. one being [wolfbain5 workstations](https://github.com/wolfbain5/7dtd-a19/tree/master/wolfbain5%20workstations), and using it for all crafting may be hard to maintain |
-
-
-# Last a17 release: See Original Khelldons modlets this repo is forked from
