@@ -1,7 +1,7 @@
 **For game**: [7 Days to Die](https://7daystodie.com)
 
-### Originally: 7d2dModlets
-Originally Forked from Khelldons [original 7d2dModlets for alpha17](https://github.com/Khelldon/7d2dModlets), tehn moved into this repo during a19
+**Note**
+Originally Forked from Khelldons [original 7d2dModlets for alpha17](https://github.com/Khelldon/7d2dModlets), then moved into this repo during a19
 
 Note: Should anyone, The Fun Pimps, etc wonder, Khelldon gave permission to use/update these as needed, per https://7daystodie.com personal communications. I plan on trying to keep these up to date and close to original purpose/functionality as much as I reasonably can.
 
