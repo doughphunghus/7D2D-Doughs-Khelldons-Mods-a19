@@ -9,6 +9,17 @@
 
 <!-- Some resources for later
 DOUGH a19 DOCS:
+
+KHWoodFrame(s) are the "upgrade" to a frame
+The default frame is made "weak" meaning it will not build out > 1 block without being upgraded.
+So "frames" are normal blocks put down orifinally, just no stability glue. THen "upgrade" to add
+a "frame" with stability glue. Then upgrade that to a normal block.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!! Cannot upgrade a frame and you have nails oddity !!!!!!!!!!!!!!
+NOTE: VANILLA CODE REQUIRES an "upgrade Item" for a tool to use to upgrade, and a STONE AX
+CANNOT USE NAILS to upgrade!!  Do: you can only upgrtade a frame with a tool BETTER than a hammer
+BUT ALSO: KHELLDON-GetNailed does not allow the crowbar to use nails to upgrade!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 This may need to be dropped? Its a lot of work to keep up.
 To update all the blocks:
 - Copy in all the "<block name="woodFrame..." blocks (and delete and "SolidWoodFrameX" ones)
@@ -130,7 +141,7 @@ Khelldon - Add a second Tier of wooden frames, these have glue
   	<property name="ImposterDontBlock" value="true"/>
   	<property name="CreativeMode" value="None"/>
   	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
-  	<property name="CanPickup" value="true" param1="woodFrameBlockVariantHelper"/>
+  	<!--<property name="CanPickup" value="true" param1="woodFrameBlockVariantHelper"/> --> <!-- DOUGH: NO! is a nailed frame! -->
   	<!--<property name="DisplayType" value="blockShootThrough"/>-->
   	<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
   	<!-- <property name="CustomPlaceSound" value="place_block_wood"/>  this works but was too annoying -->
@@ -453,9 +464,9 @@ DOUGH: SPECIAL BLOCK 2 of 3!
 ################################ -->
 <!--
 <set xpath="/blocks/block[@name='woodFrameBlockVariantHelper']/property[@name='Extends']/@value">khelldonWoodFrameMaster</set>
+
 <set xpath="/blocks/block[@name='woodFrameBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">khelldonWoodFrameBlock,khelldonWoodFrameRamp,woodRampIncline,woodRampInclineFiller,khelldonWoodFrameArch,khelldonWoodFrameCNRFull,khelldonWoodFrameCNRInside,khelldonWoodFrameCNRRampFiller,khelldonWoodFrameGableInvertedHalf,khelldonWoodFrameGableInvertedQuarter,khelldonWoodFrameGableInvertedSteep,khelldonWoodFrameGableQuarter,woodPlate,woodCTRPlate,woodPole,woodCTRpole,khelldonWoodFrameHalf,khelldonWoodFrameQuarterCNR,khelldonWoodFrameQuarterCNR3Way,khelldonWoodFrameQuarterSCtr,khelldonWoodFrameQuarterTeeSCtr,woodPillar100,woodQuarter,woodCTRQuarter,decoWoodCTRQuarterSquareTop,woodPillar50,decoWoodPillar50SquareTop,woodPillar50CNR,woodPillar50CNRPlate,woodSupport,woodStairs25,khelldonWoodFrameStairs50,woodStairsFilledRailingLeft,woodStairsFilledRailingRight,khelldonWoodFrameStairs25CornerCNR,woodWedgeTip,khelldonWoodFrameWedge,khelldonWoodFrameWedgeCNRInsideBottom,khelldonWoodFrameWedgeCNRInsideSteepBase,khelldonWoodFrameWedgeCNRInsideSteepTop,khelldonWoodFrameWedgeCNRInsideTop,khelldonWoodFrameWedgeCNRSteepBase,khelldonWoodFrameWedgeCNRSteepTop,khelldonWoodFrameWedgeIncline,khelldonWoodFrameWedgeStairs,khelldonWoodFrameWedgeTipCNRFullBottom,khelldonWoodFrameWedgeTipCNRFullTop,khelldonWoodFrameWedgeTipStairs,woodArrowBlock,woodArrowSlitHalf</set>
 -->
-
 <!--
 Khelldon - Change default wooden frames upgrade to tier 2 "khelldonWood" frames
 -->
