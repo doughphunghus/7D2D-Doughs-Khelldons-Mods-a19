@@ -39,7 +39,7 @@ Khelldon - Let's define our crate and the box it turns into when you break it op
 	<property name="Model" value="cube_no_cull"/>
 	<property name="AllowAllRotations" value="true"/>
 	<property name="Texture" value="276,276,270,270,270,270"/>
-	<property name="LootList" value="525"/>
+	<property name="LootList" value="798"/>
 	<property class="RepairItems"> <property name="resourcePaper" value="10"/> <property name="resourceWood" value="4"/> </property>
 	<drop event="Destroy" name="resourcePaper" count="2,8"/>
 	<property name="FilterTags" value="floot"/>
